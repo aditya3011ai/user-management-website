@@ -1,0 +1,79 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 0;
+  align-items: center;
+}
+.adduser-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+}
+
+.deletebutton {
+  background-color: rgb(255, 61, 61);
+}
+
+.loader {
+  border: 10px solid #dedede;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+.backbutton{
+  margin-top: 10px;
+  background-color: #3498db;
+}
+
+@media screen and (max-width: 938px) {
+ 
+   body{
+    margin: 0;
+    padding: 0;
+   }
+  .Header{
+    width: 100%;
+    display: flex;
+  }
+  table {
+    font-size: 14px;
+    width: 100vw;
+  }
+  td{
+    width: 100%;
+    padding: 5px;
+  }
+  form {
+    display: block;
+  }
+ button{
+   width: 100%;   
+ }
+ .loader{
+  width: 40px;
+  height: 40px;
+  border: 8px solid #dedede;
+  border-top: 8px solid #3498db;
+ }
+}
+@media screen and (max-width: 650px) {
+  table{
+    font-size:  9px;
+  }
+  td,th{
+    padding: 05px;
+  }
+  .tablebutton{
+  font-size: 8px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  }
+  .adduserbutton{
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+}
