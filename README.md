@@ -67,28 +67,13 @@ Before running the application, ensure you have the following installed:
 5. Open the app in your browser:
 
    ```
-   http://localhost:3000
+   http://localhost:4173
    ```
 
 ### API Integration
 
 This app uses the JSONPlaceholder API, a mock REST API used to simulate CRUD operations. Although the data is not persisted, the app simulates the process of creating, editing, and deleting users.
 
-## File Structure
-
-```
-├── public
-│   └── index.html
-├── src
-│   ├── components
-│   │   ├── UserForm.js      # Component for creating/updating users
-│   │   └── UserList.js      # Component to display the list of users
-│   ├── App.js               # Main application file
-│   ├── index.js             # Entry point for the app
-│   └── styles.css           # Basic styles for the app
-├── README.md                # Project documentation
-└── package.json             # Project metadata and dependencies
-```
 
 ## Key Components
 
@@ -107,8 +92,8 @@ This app uses the JSONPlaceholder API, a mock REST API used to simulate CRUD ope
 The application uses `react-router-dom` for navigation between different pages:
 
 - **`/`:** Displays the list of users.
-- **`/create`:** Displays a form to create a new user.
-- **`/edit/:id`:** Displays a form to edit an existing user.
+- **`/user`:** Displays a form to create a new user.
+- **`/user/:id`:** Displays a form to edit an existing user.
 
 ## Usage
 
@@ -136,18 +121,3 @@ If there is any issue with the API requests (e.g., network failure), the applica
 ## Responsive Design
 
 The app is styled to work well on both desktop and mobile devices. Basic CSS is used to ensure responsiveness.
-
-## Future Improvements
-
-- Implement better state management using **Redux** or **Context API**.
-- Add unit and integration tests with **Jest** and **React Testing Library**.
-- Improve the design and styling using **CSS frameworks** like **Tailwind CSS** or **Bootstrap**.
-- Implement server-side user persistence instead of relying on a mock API.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to adjust any sections depending on the exact structure and features of your project!
